@@ -1,0 +1,45 @@
+{
+  "name": "nb_tool",
+  "version": "0.0.1",
+  "description": "a typescript tool collection",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rollup -w -c",
+    "build": "rollup -c",
+    "test": "jest",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Q3B0/nb_tool.git"
+  },
+  "keywords": [
+    "niubi"
+  ],
+  "author": "mavjll",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Q3B0/nb_tool/issues"
+  },
+  "homepage": "https://github.com/Q3B0/nb_tool#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^19.0.3",
+    "@commitlint/config-conventional": "^19.0.3",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "rollup": "^4.12.1",
+    "typescript": "^5.4.2"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.xxx.com/"
+ }
+}
